@@ -5,6 +5,9 @@ var mysql = require('mysql');
 
 app.use(express.static('public'));
 
+const bodyParser = require('body-parser');
+const jsonParser = bodyParser.json();
+
 // connection object
 var con = mysql.createConnection({
   host: "http://localhost:3306",
