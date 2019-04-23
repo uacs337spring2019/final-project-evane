@@ -27,6 +27,7 @@ app.get('/', function (req, res) {
 		console.log("Connected!");
 		});
 	});
+  res.send("hello!");
 })
 
 app.listen(process.env.PORT);
