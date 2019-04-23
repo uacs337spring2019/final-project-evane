@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 // connection object
 var con = mysql.createConnection({
-  host: "process.env.PORT",
+  host: "http://localhost:3306",
   database: "cs337final",
   user: "root",
   password: "Unlock-sql_complete2739",
