@@ -1,8 +1,8 @@
 {
-  "name": "pagecontrol",
+  "name": "page_service",
   "version": "1.0.0",
-  "description": "Final project package",
-  "main": "pagecontrol.js",
+  "description": "",
+  "main": "page_service.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
