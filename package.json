@@ -1,0 +1,19 @@
+{
+  "name": "pagecontrol",
+  "version": "1.0.0",
+  "description": "Final project package",
+  "main": "pagecontrol.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uacs337spring2019/final-project-evane.git"
+  },
+  "author": "Evan Ellingsberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uacs337spring2019/final-project-evane/issues"
+  },
+  "homepage": "https://github.com/uacs337spring2019/final-project-evane#readme"
+}

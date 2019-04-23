@@ -1,0 +1,72 @@
+<!--
+CSc 337, Final
+
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="page.css" />
+		<script type="text/javascript" src="pagecontrol.js"></script>
+		<title>Feeding Time</title>
+	</head>
+	<body>
+		<div id="top"><div>Feeding Time</div><button id="home">Home</button></div>
+		<div id="mid">
+			<div id="midc">
+				<div id="homeIntro">
+					<h1>Welcome!</h1>
+					<p>One of the amazing traits of our world are the variaty of dishes from
+						different countries. <br/> Find a recipe to from our diverse collection
+						with the following search commands:
+					</p>
+
+					<div id="fcountry">
+						COUNTRY: [NAME]
+					</div>
+					<div id ="fingredient">
+						INGREDIENT: [NAME, NAME, ...]
+					</div>
+					<div id="fstyle">
+						STYLE: [NAME]
+					</div>
+					<div id="fall">
+						All
+					</div>
+
+					<div id="help">*style names are vegetarian, keto, glutenfree <br/>
+					*Do not include the brackets</div>
+					<div>Cook your heart out!</div>
+				</div>
+
+				<div id="searchcontain">
+					<div id="search">
+						<div id="innersearch">
+							<fieldset>
+								<legend>Search</legend>
+								<input type="text" id="searchbox" pattern="^(STYLE:|INGREDIENT:|COUNTRY:|ALL).*"
+								title="Must be one of the stated commands shown above. *click on a command to copy an outline to the input box">
+								<button  id="searchsubmit">Enter</button>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="rlist">
+				<h1>Recipes Found:</h1>
+				<div id="recipes"><ul id="rfound"><li>wow</li></ul></div>
+			</div>
+
+			<div id="singlerecipe">
+				<img id="rstyle" src="multisym.jpg" alt="Style"/>
+				<div id="recipecontainer">
+					<h1 id="title">aka</h1>
+					<h4 id="rcountry">jello</h4>
+					<div><h3>INGREDIENTS</h3><ul id="ingredientsl"><li>wow</li></ul></div>
+					<div><h3>STEPS</h3><ul id="steps"><li>wow</li></ul></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
