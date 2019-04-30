@@ -74,7 +74,7 @@ sql database.
   }
 
   function showrecipe(){
-    let url = "http://localhost:3000/";
+    let url = "https://csc337-web.herokuapp.com/";
     let onname = this.innerHTML;
     document.getElementById("rfound").innerHTML = "";
     document.getElementById("rlist").style.display = "none";
@@ -127,7 +127,7 @@ sql database.
     Function:
   */
   function getcountry(){
-    let url = "http://localhost:3000/";
+    let url = "https://csc337-web.herokuapp.com/";
     let recipeslisted = document.getElementById("rfound");
     let cmd = document.getElementById("searchbox");
     fetch(url)
@@ -163,7 +163,7 @@ sql database.
     Function:
   */
   function getingredient(){
-    let url = "http://localhost:3000/";
+    let url = "https://csc337-web.herokuapp.com/";
     let recipeslisted = document.getElementById("rfound");
     let cmd = document.getElementById("searchbox");
     fetch(url)
@@ -204,7 +204,7 @@ sql database.
     Function:
   */
   function bystyle(){
-    let url = "http://localhost:3000/";
+    let url = "https://csc337-web.herokuapp.com/";
     let recipeslisted = document.getElementById("rfound");
     let cmd = document.getElementById("searchbox");
     fetch(url)
@@ -251,7 +251,7 @@ sql database.
     sql data base and displays them on the recipe list page.
   */
   function allrecipes(){
-    let url = "http://localhost:3000/";
+    let url = "https://csc337-web.herokuapp.com/";
     let recipeslisted = document.getElementById("rfound");
     fetch(url)
       .then(checkStatus)
