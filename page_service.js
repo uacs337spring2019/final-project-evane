@@ -18,11 +18,9 @@ app.use(express.static('public'));
 
 app.get('/', function (req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
-	let finishedjson = {};
   let file = fs.readFileSync("recipes.txt", "utf8");
-	finishedjson["recipes"] = file;
   console.log(file);
-  res.send(finishedjson.unescapeEcmaScript());
+  res.send(file);
 })
 
 app.listen(process.env.PORT);
