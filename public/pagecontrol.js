@@ -7,10 +7,9 @@ This file handles the javascript for the html page and the fetching from the
 sql database.
 */
 
-"use strict";
 
 (function(){
-
+  "use strict";
   window.onload = function(){
     document.getElementById("home").addEventListener("click", gohome);
     document.getElementById("searchsubmit").addEventListener("click", gorecipes);
