@@ -18,7 +18,7 @@ app.use(express.static('public'));
 
 app.get('/', function (req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
-  let file = fs.readFileSync("recipes.txt", "utf8");
+  let file = fs.readFileSync("public/recipes.txt", "utf8");
   console.log(file);
   res.send(file);
 })
