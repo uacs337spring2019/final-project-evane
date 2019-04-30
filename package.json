@@ -2,7 +2,7 @@
   "name": "page_service",
   "version": "1.0.0",
   "description": "",
-  "main": "page_service.js",
+  "main": "index.js",
   "dependencies": {
     "client-sessions": "^0.8.0",
     "cookie-parser": "^1.4.4",
@@ -25,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/uacs337spring2019/final-project-evane/issues"
   },
-  "homepage": "https://github.com/uacs337spring2019/final-project-evane#readme"
+  "homepage": "https://github.com/uacs337spring2019/final-project-evane/index.js"
 }
