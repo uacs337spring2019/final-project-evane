@@ -89,7 +89,8 @@ sql database.
     fetch(url)
       .then(checkStatus)
       .then(function(responseText){
-        let json = JSON.parse(responseText);
+        let json = JSON.stringify(responseText);
+        json = JSON.parse(json);
         let jrecipes = json["recipes"];
         let recipeindex;
         for(let i = 0; i < jrecipes.length; i ++){
@@ -132,7 +133,8 @@ sql database.
     fetch(url)
       .then(checkStatus)
       .then(function(responseText){
-        let json =  JSON.parse(responseText);
+        let json = JSON.stringify(responseText);
+        json = JSON.parse(json);
         let recipesfound = json["recipes"];
         let x = 0;
         for(let i = 0; i < recipesfound.length; i ++){
@@ -168,7 +170,8 @@ sql database.
     fetch(url)
       .then(checkStatus)
       .then(function(responseText){
-        let json =  JSON.parse(responseText);
+        let json = JSON.stringify(responseText);
+        json = JSON.parse(json);
         let recipesfound = json["recipes"];
         let x = 0;
         let regcmd = new RegExp(cmd.value.split(":")[1].trim());
@@ -209,7 +212,8 @@ sql database.
     fetch(url)
       .then(checkStatus)
       .then(function(responseText){
-        let json =  JSON.parse(responseText);
+        let json = JSON.stringify(responseText);
+        json = JSON.parse(json);
         let recipesfound = json["recipes"];
         let x = 0;
         let cmddata = cmd.value.split(":")[1].trim();
@@ -255,7 +259,8 @@ sql database.
     fetch(url)
       .then(checkStatus)
       .then(function(responseText){
-        let json =  JSON.parse(responseText);
+        let json = JSON.stringify(responseText);
+        json = JSON.parse(json);
         let recipesfound = json["recipes"];
         for(let i = 0; i < recipesfound.length; i ++){
           let curli = document.createElement("li");
