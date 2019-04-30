@@ -200,7 +200,7 @@ sql database.
   }
 
   /**
-    Function:
+    Function:bystyle
   */
   function bystyle(){
     let url = "https://csc337-web.herokuapp.com/";
