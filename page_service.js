@@ -1,33 +1,26 @@
-
+/*
+Evan Ellingsberg
+CSC 337, Spring 2019
+Final
+Program: Final
+This file handles service for the html page. It accesses the sql database and
+sends back table data depending on what url mode is fetched. The modes are the
+commands found in the html page with change the query to the database.
+*/
 const express = require("express");
 const app = express();
-var mysql = require('mysql');
+
+const fs = require("fs");
 
 app.use(express.static('public'));
 
-const bodyParser = require('body-parser');
-const jsonParser = bodyParser.json();
 
-// connection object
-var con = mysql.createConnection({
-  host: "http://localhost:3306",
-  database: "cs337final",
-  user: "root",
-  password: "Unlock-sql_complete2739",
-  debug: "true"
-});
-console.log("connected");
 
 app.get('/', function (req, res) {
 	res.header("Access-Control-Allow-Origin", "*");
-	let city = query.city;
-
-	con.connect(function(err) {
-		if (err) throw err;
-		console.log("Connected!");
-		});
-	});
-  res.send("hello!");
+  let file = fs.readFileSync("recipes.txt", "utf8");
+  console.log(file);
+  res.send(file);
 })
 
-app.listen(process.env.PORT);
+app.listen(3000);
