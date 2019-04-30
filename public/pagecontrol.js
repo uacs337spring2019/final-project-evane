@@ -89,7 +89,7 @@ sql database.
     fetch(url)
       .then(checkStatus)
       .then(function(responseText){
-        let json = responseText);
+        let json = JSON.parse(responseText);
         let jrecipes = json["recipes"];
         let recipeindex;
         for(let i = 0; i < jrecipes.length; i ++){
