@@ -22,7 +22,7 @@ app.get('/', function (req, res) {
   let file = fs.readFileSync("recipes.txt", "utf8");
 	finishedjson["recipes"] = file;
   console.log(file);
-  res.send(finishedjson);
+  res.send(finishedjson.unescapeEcmaScript());
 })
 
 app.listen(process.env.PORT);
