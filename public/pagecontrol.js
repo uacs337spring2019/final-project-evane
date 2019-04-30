@@ -260,6 +260,7 @@ sql database.
       .then(checkStatus)
       .then(function(responseText){
         let json = JSON.stringify(responseText);
+        console.log(json);
         json = JSON.parse(json);
         let recipesfound = json["recipes"];
         for(let i = 0; i < recipesfound.length; i ++){
